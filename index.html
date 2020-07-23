@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Clock</title>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="index.css" />
   </head>
 
@@ -16,10 +17,16 @@
     <!-- User 이름을 물어보기
     여기서 form으로 작성한 이유는 enter를 쳤을 때, 반영하기 위해서
     default에 의해서 form을 제출 시, 다른 곳으로 보내려 함. -->
-
     <h4 class="js-greetings greetings"></h4>
+    <!--입력받은 유저 이름이 출력될 곳-->
+
+    <form class="js-toDoForm">
+      <input type="text" placeholder="Write a To-Do-List" />
+    </form>
+    <ul class="js-toDoList"></ul>
 
     <script src="clock.js"></script>
     <script src="username.js"></script>
+    <script src="todolist.js"></script>
   </body>
 </html>
