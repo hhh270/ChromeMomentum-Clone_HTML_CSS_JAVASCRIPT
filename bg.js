@@ -1,3 +1,5 @@
+//background source from https://unsplash.com/backgrounds
+
 const body = document.querySelector("body");
 
 const IMG_Number = 4;
