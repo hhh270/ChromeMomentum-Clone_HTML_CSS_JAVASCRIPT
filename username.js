@@ -59,7 +59,7 @@ function paintGreeting(text) {
   //이미 user이름을 아니까 물어볼 필요가 없음.
   greeting.classList.add(SHOWING_CN);
   //class를 추가.(greeting이 화면에 출력되게 해줌.)
-  greeting.innerText = `Hello ${text}`;
+  greeting.innerText = `Hope you have a great day, ${text}!`;
   // greeting에 해당 문자열 추가.
 }
 //만약 유저가 있으면 Hello 유저 네임 출력.

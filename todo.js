@@ -48,7 +48,7 @@ function paintToDo(text) {
   //id를 통해 array의 길이(몇개)가 어느 정도인지 알 수 있음.
   //위와 같은 경우는 +1이므로 아무것도 없을 때에는 1이 출력.
 
-  delBtn.innerText = "Del";
+  delBtn.innerText = "X";
   //만약 Del이 아닌 이모지를 넣을 경우,
   //charset이 지정이 안되어 있을 경우, 제대로 출력이 안됨.
   delBtn.addEventListener("click", deleteToDo);

@@ -1,15 +1,35 @@
+@import "reset.css";
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #2c3e50;
+}
+
+.js-clock {
+  font-size: 80px;
+}
+
+.js-title {
   color: white;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 200px;
+  text-shadow: 6px 2px 2px rgb(78, 78, 78);
 }
 
-.form,
-.greetings {
-  display: none;
-}
-
-.showing {
-  display: block;
+.js-weather {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  position: fixed;
+  top: 3%;
+  right: 3%;
 }
 
 @keyframes fadeIn {
@@ -19,6 +39,126 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.ask {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.945);
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 10%;
+  width: 80%;
+  text-align: center;
+  outline: none;
+  border: none;
+  animation: fadeIn 0.5s linear;
+}
+
+.js-form {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.js-form input {
+  color: white;
+  font-size: 30px;
+  margin: 0px 25%;
+  margin-bottom: 30px;
+  width: 50%;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid white;
+  background-color: transparent;
+}
+
+.js-form ::placeholder {
+  color: white;
+  font-weight: bold;
+}
+
+.js-greetings {
+  margin: 50px 0px;
+  font-size: 35px;
+  color: white;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.5s linear;
+}
+
+.js-toDoForm {
+  display: inline;
+  right: 0px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.js-toDoForm input {
+  color: rgba(255, 255, 255, 0.945);
+  font-size: 25px;
+  margin: 0px 25%;
+  width: 50%;
+  text-align: center;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid white;
+  background-color: transparent;
+}
+
+.js-toDoForm ::placeholder {
+  font-weight: 600;
+}
+
+.js-toDoList {
+  margin: 20px 0px;
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeIn 0.5s linear;
+}
+
+.js-toDoList li {
+  position: relative;
+  margin: 0px 25%;
+  width: 50%;
+  text-align: left;
+}
+.js-toDoList span {
+  width: 100px;
+  margin-top: 10px;
+  color: white;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.js-toDoList button {
+  position: relative;
+  right: 0px;
+  margin-left: 10px;
+  color: white;
+  font-size: 28px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: block;
 }
 
 .bgImage {
